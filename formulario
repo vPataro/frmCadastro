@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <style>
+        input[type=text]
+        {
+             padding: 12px 20px;
+             margin: 8px 0;
+             box-sizing: border-box;
+        }
+        legend
+        {
+            width: 70px;
+        }
+        fieldset 
+        {
+            width: 30%;
+            height: 400px;
+        }
+        
+        .logoTeste
+        {
+          width: 10%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body bgcolor="black">
+<br><br><br>
+
+  <center>
+    <img class="logoTeste" src="imagens/logoTeste2.png">
+  <fieldset>
+    <legend><font color="white" size="5">Cadastro</font></legend>
+
+    <div class="row">
+    <form class="col s12" action="insere.php" method="post">
+      <div class="row">
+        <div class="input-field col s12">
+          <input style="color: gray;" type="text" class="validate" name="nome">
+          <label for="icon_prefix">Nome:</label>
+        </div>
+        <div class="input-field col s12">
+          <input style="color: gray;" type="text" class="validate" name="email">
+          <label for="icon_telephone">E-mail:</label>
+        </div>
+        <div class="input-field col s12">
+          <input style="color: gray;" id="icon_prefix" type="text" class="validate" name="usuario">
+          <label for="icon_prefix">Usuário:</label>
+        </div>
+        <div class="input-field col s12">
+          <input style="color: gray;" id="icon_prefix" type="text" class="validate" name="senha">
+          <label for="icon_prefix">senha:</label>
+        </div>
+        <div class="input-field col s12">
+          <button name="btnCadastrar" class="waves-effect waves-light btn-large">Cadastrar</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  </fieldset>
+</center>    
+
+</body>
+</html>
